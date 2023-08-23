@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Wimbledon</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <link rel="icon" type="images/x-icon" href="images/wimbledon-logo-png-transparent-tennis-new-latest.png">
+
+
+
+</head>
+<style>
+    :root {
+        --bg-green: #188754;
+        --text-green: #188754;
+        --text-voilet: #54008B;
+        --bg-voilet: #54008b;
+        --bg-yellow: yellow;
+    }
+
+    .text-body-secondary {
+        color: #fff;
+    }
+
+    .text-green {
+        color: var(--text-green)
+    }
+
+    .text-yellow {
+        color: var(--text-yellow)
+    }
+
+    .text-voilet {
+        color: var(--text-voilet)
+    }
+
+    .bg-green {
+        background: var(--bg-green);
+    }
+
+    .bg-voilet {
+        background: var(--bg-voilet);
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #fff;
+        color: black;
+        transition: all 0.5s;
+    }
+
+    .navbar-toggler {
+        background-color: none;
+        border: none;
+
+    }
+
+    .nav-link {
+        /* color: var(--text-green); */
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+        margin-top: 2px;
+        transition: all 0.3s;
+    }
+
+    .scale {
+        height: 424px;
+        width: 635px;
+        overflow: hidden;
+    }
+
+    .scale img {
+        height: 424px;
+        width: 635px;
+        object-fit: cover;
+        transition: all 0.2s ease;
+        opacity: 0.8;
+    }
+
+    .scale img:hover {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    .fa-2xl {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card {
+        border: none;
+
+    }
+
+    .owl-prev {
+        background: #ffff;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 35%;
+        left: 1%;
+        /* background: var(--bg-green) !important; */
+        color: #fff !important;
+
+    }
+
+    .owl-next {
+        /* background: var(--bg-green) !important; */
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 40%;
+        right: 1%;
+        color: #fff !important;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: 361px;
+        object-fit: cover;
+
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        /* cursor: pointer; */
+
+    }
+
+    a:hover {
+        text-decoration: underline;
+        transition: all 0.8s;
+    }
+
+    .nav-item {
+        color: #fff !important;
+    }
+
+    .nav-link:hover {
+        color: var(--text-green);
+        text-decoration: underline;
+    }
+
+
+
+    .dark {
+        background: #000;
+        color: white;
+        transition: all 0.5s;
+    }
+
+
+    .toggleB {
+        padding: 6px 9px;
+        background-color: white;
+        border: none;
+        border-radius: 7px;
+        position: relative;
+        top: 1.25rem;
+        left: 26.3rem;
+    }
+
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0 5px 0;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        background: green;
+        opacity: 0.8;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 40%;
+    }
+
+    input[type=submit]:active {
+        opacity: 1;
+    }
+
+    input[type=button] {
+        background: red;
+        opacity: 0.8;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 40%;
+    }
+
+    input[type=button]:active {
+        opacity: 1;
+    }
+
+    .signIn a {
+        text-decoration: none;
+        text-align: start;
+        color: white;
+    }
+
+    .signIn a:active {
+        color: red;
+    }
+
+    .modal-header {
+        border: none;
+    }
+
+    .modal-content {
+        /* background:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));       	     */
+        border: 1px solid #fff;
+        border-radius: 0;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-dark bg-tertiary fixed-top">
+            <div class="container">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn text-light " data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@getbootstrap">
+                    LOGIN
+                </button>
+                <a class="navbar-brand m-auto" href="#"><img
+                        src="images/wimbledon-logo-png-transparent-tennis-new-latest.png" alt=""
+                        style="width: 80px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand m-auto" href="#"><img
+                                src="images/wimbledon-logo-png-transparent-tennis-new-latest.png" alt=""
+                                style="width: 80px;"></a>
+
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Championships</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tickets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Musuem & Tours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About us</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Shop Merchandise
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Mens</a></li>
+                                    <li><a class="dropdown-item" href="#">Womens</a></li>
+                                    <li>
+                                        <!-- <hr class="dropdown-divider"> -->
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Accessories</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/carousel1.jpg" class="d-block w-100" alt="..." style="height: 1200px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>The Championships 2023 Highlights 2024 Ticket Information Visit The Online Shop</h5>
+                        <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/wallpaperflare.com_wallpaper (65).jpg" class="d-block w-100" alt="..."
+                        style="height: 1200px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>The Championships 2023 Highlights 2024 Ticket Information Visit The Online Shop</h5>
+                        <!-- <p>Some representative placeholder content for the second slide.</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel2.jpg" class="d-block w-100" alt="..." style="height: 1200px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>The Championships 2023 Highlights 2024 Ticket Information Visit The Online Shop</h5>
+                        <!-- <p>Some representative placeholder content for the third slide.</p> -->
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container-fluid my-5">
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="container">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav m-auto gap-5 fw-bold">
+                            <li class="nav-item ">
+                                <i class="fa-solid fa-layer-group fa-2xl" style="color: #00703c;"></i><a
+                                    class="nav-link mt-3" aria-current="page" href="#">All</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-scroll fa-2xl" style="color: #00703c;"></i><a
+                                    class="nav-link mt-3 " href="#">NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-regular fa-images fa-2xl" style="color: #00703c;"></i><a
+                                    class="nav-link mt-3" href="#">PHOTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-clapperboard fa-2xl" style="color: #00703c;"></i><a
+                                    class="nav-link mt-3" href="#">VIDEOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-star fa-2xl" style="color: #00703c;"></i><a class="nav-link mt-3"
+                                    href="#">YOUR PLAYERS</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Modal -->
+        <div class="go_DOp _2errNRs order-md-2 d-flex">
+            <button type="button" class="btn btn-user d-none d-lg-block" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="fa fa-user-o"
+                    aria-hidden="true"></i></button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered">
+                    <div class="modal-content bg-black py-1">
+                        <div class="modal-header p-2 ms-2  border-1 border-bottom border-white">
+                            <h5 class="m-auto"><img src="images/wimbledon-logo-png-transparent-tennis-new-latest.png"
+                                    alt="" width="50" height="50"></h5>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" name="uname" placeholder="Enter Email"
+                                        onblur="return validateForm()" required>
+                                    <span id="errorContact"><i class="bi bi-check2" id="check"></i>
+
+                                        <input type="text" placeholder="Enter Password" name="psw" required>
+                                        <br><br>
+                                        <input type="submit" value="Login">
+                                        <input type="button" value="Cancel" data-bs-dismiss="modal">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <span class="signIn"><a href="#">Sign-in</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <!-- <div class="container-fluid">
+            <div class="clearfix">
+                <img src="images/player jump.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+
+                <p>
+                    A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're
+                    adding
+                    quite a few meaningless phrases here to demonstrate how the columns interact here with the floated
+                    image.
+                </p>
+
+                <p>
+                    As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would
+                    look
+                    with some actual content in here, rather than just this boring placeholder text that goes on and on,
+                    but
+                    actually conveys no tangible information at. It simply takes up space and should not really be read.
+                </p>
+
+                <p>
+                    And yet, here you are, still persevering in reading this placeholder text, hoping for some more
+                    insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that
+                    here.
+                </p>
+            </div>
+        </div> -->
+
+
+        <div class="container-fluid my-5 ">
+            <div class="container text-left">
+                <div class="row d-flex align-items-center">
+                    <div class="col col-md-6">
+                        <a href="#">
+                            <h2 class="text-voilet fw-bold mt-5 ">Wimbledon Championships</h2>
+                        </a>
+                        <p class="fs-5 mt-4 ms-2 lh-base ">The tournament traditionally takes place over
+                            two weeks
+                            in
+                            late June
+                            and early
+                            July, starting on the last Monday in June and culminating with the Ladies' and Gentlemen's
+                            Singles Finals,
+                            scheduled for the Saturday and Sunday at the end of the second week. Five major events are
+                            held each year,
+                            with additional junior and invitational competitions also taking place. In 2009, Wimbledon's
+                            Centre Court
+                            was fitted with a retractable roof to lessen the loss of playing time due to rain. A roof
+                            was operational
+                            over No. 1 Court from 2019,[7] when a number of other improvements were made, including
+                            adding cushioned
+                            seating, a table and 10 independently operable cameras per court to capture the games.The
+                            2023 Wimbledon
+                            Championships was the 136th staging and ran from 3 July 2023 to 16 July 2023.</p>
+                        <!-- <p><a href="#" class="btn btn-success mt-3">Learn More</a></p> -->
+                    </div>
+                    <div class="col col-md-6">
+                        <div class="row justify-content-center gap-4 my-5">
+                            <div class="col-6 col-sm-4 me-5 "><img src="images/1.jpg" alt="" style="width: 250px;">
+                            </div>
+                            <div class="col-6 col-sm-4 ms-4 "><img src="images/2.jpg" alt="" style="width: 250px;">
+                            </div>
+
+                            <!-- Force next columns to break to new line at md breakpoint and up -->
+                            <div class="w-100 d-none d-md-block"></div>
+
+                            <div class="col-6 col-sm-4  me-5 mt-1"><img src="images/3.jpg" alt="" style="width: 250px;">
+                            </div>
+                            <div class="col-6 col-sm-4 ms-4 mt-1"><img src="images/4.jpg" alt="" style="width: 250px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid my-5">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col col-md-6">
+                        <div class="col ">
+                            <div class="scale"><img src="images/player jump.jpg" alt="" style="width: 100%;"></div>
+                        </div>
+
+                    </div>
+                    <div class="col col-md-6">
+                        <a href="#">
+                            <h1 class="text-voilet fw-bold ms-5">AELTC to host<br>expanded Play<br>Your Way
+                                to<br>Wimbledon
+                                Finals</h1>
+                        </a>
+                        <p class="fs-5 mt-4 ms-2 lh-base ms-5">
+                            Aspiring tennis players<br>are set to play onWimbledon's courts for the<br>national finals
+                            of
+                            Play Your Way to Wimbledon,<br>powered by Vodafone,<br>featuring new categories for 2023.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid my-5">
+            <div class="container d-flex">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="images/cap.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text text-center fw-bold text-voilet">CHAMPIONS
+                                    LOGO<br>CAP<br>WHITE <span class="text-green"><br>__<br>₹‌ 950.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="images/skirt.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text text-center fw-bold text-voilet">WOMEN
+                                    CORE<br>PERFORMANCE SKORT<br>WHITE<span class="text-green"><br>__<br>₹
+                                        ‌7,950.00</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="images/women tee.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text text-center fw-bold text-voilet">WOMEN
+                                    CORE<br>PERFORMANCE<br>SLEEVELESS
+                                    POLO-<br>WHITE <span class="text-green"><br>__<br>₹‌ 6,950.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="images/wshoes.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text text-center fw-bold text-voilet">BABOLAT
+                                    JET MACH 3<br> WOMENS
+                                    TRAINERS<br>WHITE<span class="text-green"><br>__<br>₹ ‌17,100.00‌</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="images/cap2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text text-center fw-bold text-voilet">2023
+                                    DATED<br>MUG<br>WHITE<span class="text-green"><br>__<br>₹‌ 1050.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="images/bands.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text text-center fw-bold text-voilet">SWEATBANDS
+                                    <br>TWIN PACK<br>WHITE<span class="text-green"><br>__<br>₹ ‌650.00</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="images/teees.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text text-center fw-bold text-voilet">MEN
+                                    SQAURE<br>PERFORMANCE<br>T-SHIRT
+                                    <br>WHITE <span class="text-green"><br>__<br>₹ ‌4,450.00</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="images/half zip.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text text-center fw-bold text-voilet">MEN
+                                    CORE<br>PERFORMANCE<br>1/4
+                                    TRAINING-TOP<br>WHITE <span class="text-green"><br>__<br>₹ ‌9,500.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="images/shorts.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text text-center fw-bold text-voilet">MENS
+                                    CORE<br>PERFORMANCE<br>SHORTS
+                                    <br>WHITE <span class="text-green"><br>__<br>₹ ‌6,950.00</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="images/shoes.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text text-center fw-bold text-voilet">BABOLAT
+                                    SFX3<br>ALL COURT<br>WOMENS
+                                    TRAINERS<br>WHITE <span class="text-green"><br>__<br>₹ ‌12,100.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="images/zipper.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text text-center fw-bold text-voilet">WOMEN
+                                    FULL<br>ZIP JACKET
+                                    <br>WHITE <span class="text-green"><br>__<br>₹ ‌15,800.00</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card" style="width: 15rem;">
+                            <img src="images/tshirt.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text text-center fw-bold text-voilet">WOMEN
+                                    CORE<br>PERFORMANCE<br>SLEEVELESS
+                                    POLO-<br>WHITE <span class="text-green"><br>__<br>₹ ‌8,300.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid my-5 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="position-sticky" style="top: 2rem;">
+                            <div class=" mb-3 bg-body-tertiary rounded">
+                                <h4 class="text-green fs-3 ">About Us</h4>
+                                <p class="mb-0 text-voilet">The Championships,<br>commonly known simply as
+                                    Wimbledon,<br>is
+                                    the oldest tennis tournament in the world<br>and is regarded by many<br>as the most
+                                    prestigious.<br>It has been held at the<br> All England Club in
+                                    Wimbledon,<br>London, since 1877 and is played on<br>outdoor grass courts,<br>with
+                                    retractable roofs over<br>the two main courts since 2019. <a
+                                        href="https://en.wikipedia.org/wiki/Low_Earth_orbit">orbit.</a> </p>
+                            </div>
+                            <div>
+                                <h4 class="text-green fs-3 ">Recent posts</h4>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none border-top"
+                                            href="#">
+                                            <img src="images/ear.jpg" alt="" width="100%" height="96"
+                                                style="object-fit: contain;">
+                                            <div class="col-lg-8 text-light">
+                                                <h6 class="mb-0 lh-base text-voilet">Jabeur: For me there is one goal.
+                                                </h6>
+                                                <span class="text-green">FRI 14 JUL 2023 21:00 BST,</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none border-top"
+                                            href="#">
+                                            <img src="images/teeth.jpg" alt="" width="100%" height="96"
+                                                style="object-fit: contain;">
+
+                                            <div class=" col-lg-8 text-light">
+                                                <h6 class="mb-0 lh-base text-voilet">The Championships 2023: By the
+                                                    numbers.</h6>
+                                                <span class="text-green">TUE 18 JUL 2023 15:15 BST</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none border-top"
+                                            href="#">
+                                            <img src="images/winner.jpg" alt="" width="100%" height="96"
+                                                style="object-fit: contain;">
+
+                                            <div class=" col-lg-8 text-light">
+                                                <h6 class="mb-0 lh-base text-voilet">Quotes of The Championships.
+                                                </h6>
+                                                <span class="text-green">MON 17 JUL 2023 14:22 BST</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="ms-5 mt-5">
+                            <video autoplay loop muted style="width: 100%;">
+                                <source src="videos/v1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid my-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                            style="background-image: url('images/trophy.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Golden moments: Wimbledon Champions
+                                </h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="images/wimbledon-logo-png-transparent-tennis-new-latest.png"
+                                            alt="Bootstrap" width="32" height="32"
+                                            class="rounded-circle border border-white">
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#geo-fill" />
+                                        </svg>
+                                        <small></small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#calendar3" />
+                                        </svg>
+                                        <small>3d</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                            style="background-image: url('images/44.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to
+                                    multiple lines</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="images/wimbledon-logo-png-transparent-tennis-new-latest.png"
+                                            alt="Bootstrap" width="32" height="32"
+                                            class="rounded-circle border border-white">
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#geo-fill" />
+                                        </svg>
+                                        <small>Pakistan</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#calendar3" />
+                                        </svg>
+                                        <small>4d</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                            style="background-image: url('images/kali.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="images/wimbledon-logo-png-transparent-tennis-new-latest.png"
+                                            alt="Bootstrap" width="32" height="32"
+                                            class="rounded-circle border border-white">
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#geo-fill" />
+                                        </svg>
+                                        <small>California</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#calendar3" />
+                                        </svg>
+                                        <small>5d</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid my-5">
+            <div class="container">
+                <div class="row flex-lg-row-reverse d-flex align-items-center">
+                    <div class="col col-md-6">
+                        <div class="col ">
+                            <div class="scale"><img src="images/04.jpg" alt="" style="width: 100%;"></div>
+                        </div>
+
+                    </div>
+                    <div class="col col-md-6">
+                        <a href="#">
+                            <h1 class="text-voilet fw-bold ms-5">Vamos Carlos! Alcaraz into the final</h1>
+                        </a>
+                        <p class="fs-5 mt-4 ms-2 lh-base ms-5">
+                            Spanish No.1 seed reaches singles final by beating Medvedev in straight sets.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid my-5 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 ">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/44.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8 ">
+                                    <div class="card-body">
+                                        <a href="#">
+                                            <h5 class="card-title text-voilet fs-3 fw-bold">Five things to watch
+                                                on Day 14
+                                            </h5>
+                                        </a>
+                                        <p class="card-text text-green lh-lg">Nervy times, stormy weather,<br>'the first
+                                            Brit since',<br>a second Czech champion <br>this weekend
+                                            (potentially),<br>and a young No.1 .</p>
+                                        <p class="card-text text-voilet">SAT 15 JUL 2023 , 20:30 BST </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/21.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8 bg-blue">
+                                    <div class="card-body">
+                                        <a href="#">
+                                            <h5 class="card-title text-voilet fs-3 fw-bold"> Djokovic over Sinner: The
+                                                streak continues</h5>
+                                        </a>
+                                        <p class="card-text text-green lh-lg"> Novak Djokovic defeats<br>Jannik
+                                            Sinner<br>to
+                                            remain unbeaten<br>in 10 years on Centre Court.</p>
+                                        <p class="card-text text-voilet mt-5">FRIDAY 14 JULY 2023 , 17:06 BST</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="container-fluid mt-5 bg-voilet">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <!-- <h5 class="text-light">Section</h5> -->
+                        <ul class="nav flex-column ">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About us</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <!-- <h5 class="text-light">Section</h5> -->
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contacts</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link p-0 text-body-secondary">Merchandise</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Recent
+                                    Posts</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <!-- <h5 class="text-light"></h5> -->
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Jobs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">News</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3 text-light">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-success text-lights" type="button">Subscribe</button>
+                            </div>
+
+                        </form>
+                        <button class="toggleB" onclick="changeTheme()">Dark Mode</i></button>
+
+                    </div>
+
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-light">
+                    <p>&copy; Copyright IBM Corp., AELTC 2023. All Rights reserved
+                        .</p>
+
+                    <ul class="list-unstyled d-flex mt-3 gap-3">
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><i
+                                    class="fa-brands fa-square-facebook fa-2xl" style="color: #fff;"></i></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-instagram fa-2xl"
+                                    style="color: #ffffff;"></i></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-twitter fa-2xl"
+                                    style="color: #ffffff;"></i></a></li>
+                    </ul>
+
+                </div>
+
+            </footer>
+        </div>
+    </div>
+    <footer>
+        <!-- place footer here -->
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        </script>
+        <script>
+            function changeTheme () {
+                document.body.classList.toggle("dark");
+            }
+        </script>
+
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
